@@ -16,7 +16,7 @@ Compile using the provided shellscript `build.sh`
 Run the program using `qemu-system-riscv64 -nographic -machine virt -smp 1 -bios none -kernel ./hello`
 
 You can attach a debugger by running qemu as follows:
-`qemu-system-riscv64 -nographic -machine virt -smp 1 -bios none -kernel ./hello`
+`qemu-system-riscv64 -nographic -machine virt -smp 1 -bios none -kernel ./hello -S -s`
 
 In another terminal, you can then start the debugger:
 `riscv64-unknown-elf-gdb hello` 
