@@ -1,4 +1,4 @@
-# OSE2022
+# OSE2023
 Code for the course operating systems engineering at Uni Bamberg (Summer 2023)
 
 You need the following tools on a Unix-like system (Linux, macOS, Windows with WSL):
