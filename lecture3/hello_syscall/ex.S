@@ -38,6 +38,9 @@ ex:
         sd t5, 232(sp)
         sd t6, 240(sp)
 
+        // pass the stack pointer as first parameter to the 
+        // exception C function (in a0), which uses it as 
+        // pointer to the regs struct
         mv a0, sp
 
         // call the C trap handler in trap.c
