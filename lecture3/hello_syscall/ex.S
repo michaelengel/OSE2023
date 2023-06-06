@@ -38,6 +38,8 @@ ex:
         sd t5, 232(sp)
         sd t6, 240(sp)
 
+        mv a0, sp
+
         // call the C trap handler in trap.c
         call exception
 
@@ -51,7 +53,7 @@ ex:
         ld t2, 48(sp)
         ld s0, 56(sp)
         ld s1, 64(sp)
-        // ld a0, 72(sp) // nope, it's the return value...
+        ld a0, 72(sp)
         ld a1, 80(sp)
         ld a2, 88(sp)
         ld a3, 96(sp)
