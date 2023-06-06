@@ -1,3 +1,13 @@
+// For now, the first user program is converted by the Makefile:
+// - it is now compiled separately from the kernel
+// - the generated ELF file (user1) is converted to binary using objcopy (user1.bin)
+// - then, the binary is converted into a byte array "user1_bin" using the xxd tool
+// - the byte array is finally included here so it can be used as a source for 
+//   copying into the process memory range starting at 0x8010_0000
+
+// TODO: add additional user program(s)
+#include "userprogs1.h"
+
 #include "types.h"
 #include "riscv.h"
 
@@ -7,7 +17,7 @@ extern void printstring(char *);
 extern void printhex(uint64);
 
 void copyprog(int process) {
-  // TODO: copy user code to memory at address 0x8010_0000
+  // TODO: copy user code for given process number to memory at address 0x8010_0000
 }
 
 void setup(void) {
