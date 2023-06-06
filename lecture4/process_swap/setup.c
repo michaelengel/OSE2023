@@ -1,4 +1,3 @@
-#include "userprogs1.h"
 #include "types.h"
 #include "riscv.h"
 
@@ -9,7 +8,6 @@ extern void printhex(uint64);
 
 void copyprog(int process) {
   // TODO: copy user code to memory at address 0x8010_0000
-
 }
 
 void setup(void) {
